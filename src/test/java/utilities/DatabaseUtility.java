@@ -8,7 +8,7 @@ public class DatabaseUtility {
 
     private static Connection connection;
     private static Statement statement;
-    private static ResultSet resultSet;
+    public static ResultSet resultSet;
 
     public static void createConnection() {
         try {

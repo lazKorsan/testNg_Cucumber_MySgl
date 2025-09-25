@@ -59,7 +59,11 @@ INSERT INTO saucedemo (id, username, password) VALUES
 
 select * from saucedemo ;
 
-SELECT username from saucedemo ;]]></console>
+SELECT username from saucedemo ;
+
+select name from cron_schedules;
+
+select email from subscribers;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -72,6 +76,14 @@ SELECT username from saucedemo ;]]></console>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="5d5a4cd8-66b5-446b-9694-46e997a2cce6" />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="5d5a4cd8-66b5-446b-9694-46e997a2cce6" dataset="u201212290_qaloantec.deposits" active-filter-id="" />
+    <filter-actions connection-id="5d5a4cd8-66b5-446b-9694-46e997a2cce6" dataset="u201212290_qaloantec.cron_schedules" active-filter-id="c7450e6e-f20e-4db7-9647-43b42a2510ff">
+      <filter id="c7450e6e-f20e-4db7-9647-43b42a2510ff" name="Filter" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="id" operator="=" value="" active="true" />
+      </filter>
+    </filter-actions>
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
