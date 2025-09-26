@@ -63,7 +63,24 @@ SELECT username from saucedemo ;
 
 select name from cron_schedules;
 
-select email from subscribers;]]></console>
+select email from subscribers;
+
+
+ select * from users;
+UPDATE users 
+SET username = 'ACENK'
+WHERE username = 'acenk';
+
+update users set username = 'darkdark' where  username ='DARKDARK';
+
+ select * from users;
+
+
+ select * from users;
+
+SELECT * FROM users WHERE username = 'clementine';
+
+SELECT username = 'clementine' from users ;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -79,6 +96,7 @@ select email from subscribers;]]></console>
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="5d5a4cd8-66b5-446b-9694-46e997a2cce6" dataset="u201212290_qaloantec.deposits" active-filter-id="" />
+    <filter-actions connection-id="5d5a4cd8-66b5-446b-9694-46e997a2cce6" dataset="u201212290_qaloantec.users" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="5d5a4cd8-66b5-446b-9694-46e997a2cce6" dataset="u201212290_qaloantec.cron_schedules" active-filter-id="c7450e6e-f20e-4db7-9647-43b42a2510ff">
       <filter id="c7450e6e-f20e-4db7-9647-43b42a2510ff" name="Filter" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="id" operator="=" value="" active="true" />
@@ -118,7 +136,7 @@ select email from subscribers;]]></console>
           <token-type value="" />
           <token-config-file value="" />
           <token-profile value="" />
-          <session-user value="u201212290_qaloanuser@85.106.58.9" />
+          <session-user value="u201212290_qaloanuser@78.161.159.125" />
         </database>
         <properties>
           <auto-commit value="false" />

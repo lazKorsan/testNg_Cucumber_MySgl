@@ -60,4 +60,21 @@ public class JDBCReusableMethods {
             e.printStackTrace();
         }
     }
+
+    public static Integer executeMyUpdateQuery(String query){
+        int affectedRowCount;
+        try {
+            statement = connection.createStatement();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        try {
+            affectedRowCount = statement.executeUpdate(query);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        return affectedRowCount;
+    }
+
 }
